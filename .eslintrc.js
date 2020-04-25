@@ -32,6 +32,6 @@ module.exports = {
       { extensions: ['.jsx', '.js'] }
     ],
     'import/prefer-default-export': 'off',
-    'require-jsdoc': 'none'
+    'require-jsdoc': 'off'
   },
 };
