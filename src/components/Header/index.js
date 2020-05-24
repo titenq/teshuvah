@@ -3,45 +3,47 @@ import { NavLink } from 'react-router-dom';
 
 import { FaBars } from 'react-icons/fa';
 
-import { HeaderContainer, List, Hamburger, Overlay } from './styles';
+import styles from './Header.module.css';
 
-export default function Header() {
+const Header = () => {
   return (
-    <HeaderContainer>
-      <Hamburger>
+    <header className={styles.header}>
+      <div className={styles.hamburguer}>
         <FaBars />
-      </Hamburger>
-      <Overlay />
-      <h1>Teshuvah</h1>
-      <List>
+      </div>
+      <div className={styles.overlay}></div>
+      <label className={styles.label}>Teshuvah</label>
+      <nav className={styles.list}>
         <ul>
           <li>
-            <NavLink to="/" exact activeClassName="active">
+            <NavLink to="/" exact activeClassName={styles.active}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/biblia" exact activeClassName="active">
+            <NavLink to="/biblia" exact activeClassName={styles.active}>
               Bíblia
             </NavLink>
           </li>
           <li>
-            <NavLink to="/parashat" exact activeClassName="active">
+            <NavLink to="/parashat" exact activeClassName={styles.active}>
               Parashat
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dicionario" exact activeClassName="active">
+            <NavLink to="/dicionario" exact activeClassName={styles.active}>
               Dicionário
             </NavLink>
           </li>
           <li>
-            <NavLink to="/login" exact activeClassName="active">
+            <NavLink to="/login" exact activeClassName={styles.active}>
               Login
             </NavLink>
           </li>
         </ul>
-      </List>
-    </HeaderContainer>
+      </nav>
+    </header>
   );
-}
+};
+
+export default Header;

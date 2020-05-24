@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 
-import { FooterContainer } from './styles';
+import styles from './Footer.module.css';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <FooterContainer>
+    <footer className={styles.footer}>
       <span>&copy; Teshuvah</span>
       <a
         href="https://github.com/titenq/teshuvah"
@@ -14,6 +14,8 @@ export default function Footer() {
       >
         <FaGithub color="#fff" size={28} />
       </a>
-    </FooterContainer>
+    </footer>
   );
-}
+};
+
+export default Footer;

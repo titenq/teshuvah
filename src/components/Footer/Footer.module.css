@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-export const FooterContainer = styled.footer`
+.footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -12,4 +10,4 @@ export const FooterContainer = styled.footer`
   background: #0d47a1;
   color: #fff;
   padding: 0 30px;
-`;
+}
