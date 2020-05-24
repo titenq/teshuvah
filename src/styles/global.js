@@ -31,4 +31,8 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  h1 {
+    font-weight: 500;
+  }
 `;
