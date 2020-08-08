@@ -102,8 +102,8 @@ a::after {
   transform-origin: right;
 }
 
-a:hover::before,
-a:hover::after {
+.list a:hover::before,
+.list a:hover::after {
   transform: scaleX(1);
 }
 
